@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="test">Тест</string>
+    <string name="top_title">Заметки</string>
+    <string name="number_of_notes">заметок: %d</string>
+    <string name="priority_high">Срочно</string>
+    <string name="priority_medium">Важно</string>
+    <string name="priority_low">Несрочно</string>
+    <string name="pinned">Закреплено</string>
+    <string name="empty_notes">У вас ещё нет заметок.</string>
+    <string name="empty_pinned">У вас нет закреплённых заметок.</string>
+    <string name="dark_theme">Темная тема</string>
+    <string name="language">Язык приложения: %s</string>
+
+    <string-array name="filters_array">
+        <item>Корзина</item>
+        <item>Готово</item>
+        <item>Активно</item>
+        <item>Срочно</item>
+        <item>Средне</item>
+        <item>Низкая</item>
+    </string-array>
 </resources>

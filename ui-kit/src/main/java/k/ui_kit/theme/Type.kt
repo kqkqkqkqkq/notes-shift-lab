@@ -19,17 +19,17 @@ val Typography = Typography(
     titleLarge = TextStyle(
         fontFamily = Noto,
         fontWeight = FontWeight.Bold,
-        fontSize = 32.sp,
+        fontSize = 24.sp,
     ),
     titleMedium = TextStyle(
         fontFamily = Noto,
         fontWeight = FontWeight.Bold,
-        fontSize = 24.sp,
+        fontSize = 20.sp,
     ),
     titleSmall = TextStyle(
         fontFamily = Noto,
         fontWeight = FontWeight.Bold,
-        fontSize = 20.sp,
+        fontSize = 16.sp,
     ),
     bodyLarge = TextStyle(
         fontFamily = Noto,

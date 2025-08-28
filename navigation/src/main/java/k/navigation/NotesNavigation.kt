@@ -12,6 +12,7 @@ import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.runtime.rememberSavedStateNavEntryDecorator
 import androidx.navigation3.ui.NavDisplay
 import androidx.navigation3.ui.rememberSceneSetupNavEntryDecorator
+import k.detail_ui.DetailScreen
 import k.main_ui.MainScreen
 import k.ui_kit.theme.NotesshiftlabTheme
 
@@ -34,7 +35,18 @@ fun NotesNavigation() {
                 entry<Screen.Main> {
                     MainScreen(
                         isDarkTheme = isDarkTheme,
-                        onThemeToggle = { isDarkTheme = it }
+                        onThemeToggle = {
+                            isDarkTheme = !isDarkTheme
+                        },
+                        onNoteClick = { id ->
+                            backStack.add(Screen.Detail(id))
+                        },
+                    )
+                }
+                entry<Screen.Detail> { key ->
+                    DetailScreen(
+                        id = key.id,
+                        onBackClick = { backStack.removeLastOrNull() },
                     )
                 }
             }

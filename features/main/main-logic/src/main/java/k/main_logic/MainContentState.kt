@@ -1,12 +1,12 @@
 package k.main_logic
 
 import k.main_logic.utils.Filter
-import k.notes_data.models.Note
-import kotlinx.coroutines.flow.Flow
+import k.ui_models.models.NoteUio
 
 data class MainContentState(
-    val notes: List<Note>,
+    val notes: List<NoteUio>,
     val selectedFilters: List<Filter>,
+    val isSettingsOpen: Boolean = false,
 ) {
     companion object {
         fun default() = MainContentState(

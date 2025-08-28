@@ -36,6 +36,9 @@ viewModel = "2.9.1"
 kotlinx-coroutines = "1.10.1"
 appcompatVersion = "1.7.1"
 
+windowsizeclass = "1.3.2"
+material3Adaptive = "1.2.0-alpha06"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -79,6 +82,8 @@ androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "
 androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
 
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompatVersion" }
+androidx-compose-material3-windowsizeclass = { module = "androidx.compose.material3:material3-window-size-class", version.ref = "windowsizeclass" }
+androidx-material3-adaptive = { module = "androidx.compose.material3.adaptive:adaptive", version.ref = "material3Adaptive" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

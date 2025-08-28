@@ -34,6 +34,7 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.kotlinx.coroutines.android)
+    api(project(":ui-models"))
     implementation(project(":core:notes-data"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

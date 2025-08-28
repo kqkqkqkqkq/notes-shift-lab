@@ -14,23 +14,28 @@ import org.koin.androidx.compose.koinViewModel
 fun MainScreen(
     isDarkTheme: Boolean,
     onThemeToggle: (Boolean) -> Unit,
+    onNoteClick: (Long) -> Unit,
 ) {
-    MainScreenUI(
-        isDarkTheme,
-        onThemeToggle,
+    MainScreenUi(
+        isDarkTheme = isDarkTheme,
+        onThemeToggle = onThemeToggle,
+        onNoteClick = onNoteClick,
     )
 }
 
 @Composable
-fun MainScreenUI(
+fun MainScreenUi(
     isDarkTheme: Boolean,
     onThemeToggle: (Boolean) -> Unit,
+    onNoteClick: (Long) -> Unit,
     viewModel: MainViewModel = koinViewModel(),
 ) {
     val state by viewModel.state.collectAsState()
 
-    when(val currentState = state) {
+    when (val currentState = state) {
         is MainScreenState.Content -> MainScreenContent(
+            currentState.content,
+            onNoteClick,
             isDarkTheme,
             onThemeToggle,
         )

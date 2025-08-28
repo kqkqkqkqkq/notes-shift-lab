@@ -38,5 +38,4 @@ dependencies {
     implementation(project(":core:settings"))
     implementation(project(":features:main:main-logic"))
     implementation(project(":features:detail:detail-logic"))
-    implementation(project(":features:settings:settings-logic"))
 }

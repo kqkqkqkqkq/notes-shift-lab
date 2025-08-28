@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="test">Test</string>
+    <string name="top_title">notes.</string>
+    <string name="number_of_notes">notes: %d</string>
+    <string name="priority_high">Urgent</string>
+    <string name="priority_medium">Important</string>
+    <string name="priority_low">Low</string>
+    <string name="pinned">Pinned</string>
+    <string name="empty_notes">You have no notes yet.</string>
+    <string name="empty_pinned">You have no pinned notes.</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="language">Selected language: %s</string>
+
+    <string-array name="filters_array">
+        <item>Trash</item>
+        <item>Done</item>
+        <item>Active</item>
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
 </resources>

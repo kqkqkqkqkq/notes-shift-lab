@@ -3,10 +3,9 @@ package k.navigation
 import androidx.navigation3.runtime.NavKey
 import kotlinx.serialization.Serializable
 
-sealed class Screen: NavKey {
+sealed class Screen : NavKey {
     @Serializable
     data object Main : Screen()
-
-//    @Serializable
-//    data class Detail()
+    @Serializable
+    data class Detail(val id: Long) : Screen()
 }

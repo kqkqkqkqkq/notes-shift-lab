@@ -44,8 +44,10 @@ dependencies {
     implementation(libs.androidx.navigation3.ui)
     implementation(libs.androidx.lifecycle.viewmodel.navigation3)
 
+    implementation(libs.androidx.compose.material3.windowsizeclass)
+    implementation(libs.androidx.material3.adaptive)
+
     implementation(project(":ui-kit"))
     implementation(project(":features:main:main-ui"))
     implementation(project(":features:detail:detail-ui"))
-    implementation(project(":features:settings:settings-ui"))
 }

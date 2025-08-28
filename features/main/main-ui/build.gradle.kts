@@ -39,4 +39,5 @@ dependencies {
     implementation(libs.koin.androidx.compose)
     implementation(project(":ui-kit"))
     implementation(project(":features:main:main-logic"))
+    debugImplementation(libs.androidx.ui.tooling)
 }
