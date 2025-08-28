@@ -28,6 +28,7 @@ material3AdaptiveNav3 = "1.0.0-SNAPSHOT"
 kotlinSerialization = "2.1.21"
 kotlinxSerializationCore = "1.8.1"
 
+datastorePreferences = "1.1.7"
 koin = "4.0.4"
 room = "2.7.2"
 ksp = "2.1.21-2.0.1"
@@ -73,6 +74,10 @@ koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compos
 # Room
 androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+androidx-room-testing = { module = "androidx.room:room-testing", version.ref = "room" }
+# DataStore
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
+
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompatVersion" }
 
 [plugins]

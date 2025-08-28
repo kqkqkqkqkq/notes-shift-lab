@@ -30,8 +30,13 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
     implementation(libs.koin.core)
     implementation(libs.koin.androidx.compose)
+    implementation(libs.androidx.datastore.preferences)
+    implementation(project(":core:notes-database"))
+    implementation(project(":core:notes-data"))
+    implementation(project(":core:settings"))
+    implementation(project(":features:main:main-logic"))
+    implementation(project(":features:detail:detail-logic"))
+    implementation(project(":features:settings:settings-logic"))
 }
